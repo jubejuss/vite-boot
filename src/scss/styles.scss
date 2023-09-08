@@ -1,0 +1,28 @@
+
+// For defining your own color palette you must import those 3:
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+
+
+// For override the bootstrap own style, write your replace code before the bootstrap import
+$primary: #c5d021;
+// You can create your own color
+$tertiary: #139746;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    // add new color to map
+    'tertiary': $tertiary,
+    // you can use built in Bootstrap palettes (but its not needable, if you are looking the second block
+    'indigo': $indigo,
+  )
+);
+
+
+// Import all of Bootstrap's CSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import your custom styles after Bootstrap
