@@ -1,0 +1,37 @@
+
+// For defining your own color palette you must import those 3:
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+// For override the bootstrap own style, write your replace code before the bootstrap import
+$primary: #c5d021;
+// You can create your own color
+$tertiary: #139746;
+$brand: #d02170;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    // add new color to map
+    'primary': $primary,
+    'tertiary': $tertiary,
+  )
+);
+
+//Generating bg and text color for all base Colors
+@each $color, $value in $colors {
+  .bg-#{$color}{
+        background-color: $value !important;
+  }
+
+  .text-#{$color}{
+    color: $value !important;
+  }
+}
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+// Import your custom styles after Bootstrap
