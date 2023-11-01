@@ -1,10 +1,12 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 // Modify existing
-$primary: #00d921;
-$danger: #ff4136;
+$primary: $indigo; // or change custom, for example $primary: #40ff36; then you dont need @imports
+$danger: #ff3636;
 
 $theme-colors: (
   "primary": $primary,
-  "danger": $danger
+  "danger": $danger,
 );
 
 // Create your own map and add it to existing
@@ -14,6 +16,11 @@ $brand: (
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $brand);
+
+// example for changing btn default border radiuses
+$btn-border-radius:           0; /*$border-radius;*/
+$btn-border-radius-sm:        $border-radius-sm;
+$btn-border-radius-lg:        $border-radius-lg;
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
