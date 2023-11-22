@@ -14,7 +14,9 @@ $brand: (
   "brand": #900
 );
 
-// Merge the maps
+// Merge the maps, needable only for new variables, 
+// with this you add new colors into system, 
+// othervise just delete whole row
 $theme-colors: map-merge($theme-colors, $brand);
 
 // example for changing btn default border radiuses
