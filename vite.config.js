@@ -6,7 +6,7 @@ export default defineConfig({
   base: './', // with base you can specify your base and system generates files according to that
   build: {
     sourcemap: true, // it generates js maps for dist
-    outDir: '../dist', // output directory
+    outDir: '../docs', // output directory. default is dist, but for github pages, let it be "docs"
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name].min.[ext]' // This allows you to rename your assets
