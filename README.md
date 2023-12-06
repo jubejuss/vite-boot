@@ -1,3 +1,3 @@
-# Mõned vead
-(!) outDir /Users/juhokalberg/Documents/veebid/css-raamistikud/botstrap/bootstrap-vite/docs is not inside project root and will not be emptied.
-Use --emptyOutDir to override.
+# Selle paketi juhis
+Igakordselt alustades tööd puhtas arvutis (seal jus teie projekti pole) esimese asjana kloonite selle projekti.  
+`git clone [repoaadress](https://github.com/jubejuss/html-css-esimene-kursus.git)` 
