@@ -7,5 +7,9 @@ Igakordselt alustades tööd puhtas arvutis (seal jus teie projekti pole) esimes
 ## Pärast kloonimist
 `npm install`
 
+## Juhul kui projekt on juba varem arvuti olemas
+`git pull`
+
 ## Käivitamine
 `npm run start`
+
